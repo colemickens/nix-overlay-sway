@@ -26,7 +26,6 @@ waylandPkgs = rec {
   wev              = pkgs.callPackage ./pkgs/wev {};
   wf-recorder      = pkgs.callPackage ./pkgs/wf-recorder {};
   wlay             = pkgs.callPackage ./pkgs/wlay {};
-  wlrobs           = pkgs.callPackage ./pkgs/wlrobs {};
   wl-clipboard     = pkgs.callPackage ./pkgs/wl-clipboard {};
   wldash           = pkgs.callPackage ./pkgs/wldash {};
   wlogout          = pkgs.callPackage ./pkgs/wlogout {};
