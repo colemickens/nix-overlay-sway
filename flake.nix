@@ -96,6 +96,15 @@
             };
             # wayfire stuff
             wayfire          = prev.callPackage ./pkgs/wayfire {};
+            wf-config        = prev.callPackage ./pkgs/wf-config {};
+            wf-shell         = prev.callPackage ./pkgs/wf-shell {
+              wayfire = wayfire;
+              wf-config = wf-config;
+            };
+            wcm              = prev.callPackage ./pkgs/wcm {
+              wayfire = wayfire;
+              wf-shell = wf-shell;
+            };
           };
         in
           waylandPkgs // { inherit waylandPkgs; };
