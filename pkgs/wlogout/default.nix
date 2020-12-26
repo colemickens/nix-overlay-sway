@@ -1,7 +1,7 @@
 { stdenv, fetchgit
 , pkgconfig, meson, ninja, scdoc
 , wayland, wayland-protocols
-, libxkbcommon, gtk3
+, libxkbcommon, gtk3, gtk-layer-shell
 }:
 
 let
@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
   nativeBuildInputs = [ pkgconfig meson ninja scdoc ];
   buildInputs = [
     wayland wayland-protocols
-    libxkbcommon gtk3
+    libxkbcommon gtk3 gtk-layer-shell
   ];
 
   patchPhase = ''
