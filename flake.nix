@@ -98,6 +98,7 @@
             };
             gtk-layer-shell = prev.callPackage ./pkgs/gtk-layer-shell {};
             i3status-rust    = prev.callPackage ./pkgs/i3status-rust {};
+            mauncher = prev.callPackage ./pkgs/mauncher {};
             neatvnc = prev.callPackage ./pkgs/neatvnc {};
             obs-studio = prev.libsForQt5.callPackage ./pkgs/obs-studio {
               ffmpeg = prev.ffmpeg_4;
